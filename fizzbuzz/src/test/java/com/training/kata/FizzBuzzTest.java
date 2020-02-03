@@ -27,6 +27,8 @@ public class FizzBuzzTest {
 	@Test
 	public void testShouldReturnBuzzIfNumberDivisibleBy5() {
 		assertEquals(BUZZ_STRING, fizzBuzz.divisible(5));
+		assertEquals(BUZZ_STRING, fizzBuzz.divisible(50));
+		
 
 	}
 	
