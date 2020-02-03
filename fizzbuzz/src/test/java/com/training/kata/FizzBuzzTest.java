@@ -19,6 +19,8 @@ public class FizzBuzzTest {
 	@Test
 	public void testShouldReturnFizzIfNumberDivisibleBy3() {
 		assertEquals(STR_FIZZ, fizzBuzz.divisible(3));
+		assertEquals(STR_FIZZ, fizzBuzz.divisible(6));
+		assertEquals(STR_FIZZ, fizzBuzz.divisible(9));
 	}
 
 }
