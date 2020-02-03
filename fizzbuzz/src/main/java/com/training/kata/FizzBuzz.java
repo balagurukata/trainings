@@ -1,20 +1,22 @@
 package com.training.kata;
 
 public class FizzBuzz {
-	
-	private static final String STR_FIZZ= "fizz";
+
+	private static final String FIZZ_STRING = "fizz";
+	private static final String BUZZ_STRING = "buzz";
 	private static final int DIVISIBLE_BY_NUMBER_3 = 3;
+	private static final int DIVISIBLE_BY_NUMBER_5 = 5;
 
 	public String divisible(int number) {
-		
-		if(number % DIVISIBLE_BY_NUMBER_3 == 0) {
-			return STR_FIZZ;
-		}else {
+
+		if (number % DIVISIBLE_BY_NUMBER_3 == 0) {
+			return FIZZ_STRING;
+		} else if (number % DIVISIBLE_BY_NUMBER_5 == 0) {
+			return BUZZ_STRING;
+		} else {
 			return String.valueOf(number);
 		}
-		
-		
-		
+
 	}
 
 }
