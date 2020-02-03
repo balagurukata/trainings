@@ -11,6 +11,7 @@ public class FizzBuzzTest {
 	
 	private static final String FIZZ_STRING= "fizz";
 	private static final String BUZZ_STRING= "buzz";
+	private static final String FIZZBUZZ_STRING= "fizzbuzz";
 	
 	@Before
 	public void init() {
@@ -28,8 +29,11 @@ public class FizzBuzzTest {
 	public void testShouldReturnBuzzIfNumberDivisibleBy5() {
 		assertEquals(BUZZ_STRING, fizzBuzz.divisible(5));
 		assertEquals(BUZZ_STRING, fizzBuzz.divisible(50));
-		
-
+	}
+	
+	@Test
+	public void testShouldReturnFizzBuzzIfNumberDivisibleBy15() {
+		assertEquals(FIZZBUZZ_STRING, fizzBuzz.divisible(15));
 	}
 	
 }
