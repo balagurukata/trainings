@@ -37,4 +37,10 @@ public class FizzBuzzTest {
 		assertEquals(FIZZBUZZ_STRING, fizzBuzz.divisible(30));
 	}
 	
+	@Test
+	public void testShouldReturnSameIfNumberNotDivisible() {
+		assertEquals("1", fizzBuzz.divisible(1)); 
+		assertEquals("2", fizzBuzz.divisible(2));
+	}
+	
 }
