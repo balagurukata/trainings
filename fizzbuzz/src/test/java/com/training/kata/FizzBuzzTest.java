@@ -33,7 +33,8 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void testShouldReturnFizzBuzzIfNumberDivisibleBy15() {
-		assertEquals(FIZZBUZZ_STRING, fizzBuzz.divisible(15));
+		assertEquals(FIZZBUZZ_STRING, fizzBuzz.divisible(15)); 
+		assertEquals(FIZZBUZZ_STRING, fizzBuzz.divisible(30));
 	}
 	
 }

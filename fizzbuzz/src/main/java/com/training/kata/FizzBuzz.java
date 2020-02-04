@@ -12,12 +12,12 @@ public class FizzBuzz {
 
 	public String divisible(int number) {
 
-		if (number % DIVISIBLE_BY_NUMBER_3 == 0) {
+		if (number % DIVISIBLE_BY_NUMBER_15 == 0) {
+			return FIZZBUZZ_STRING;
+		}else if (number % DIVISIBLE_BY_NUMBER_3 == 0) {
 			return FIZZ_STRING;
 		} else if (number % DIVISIBLE_BY_NUMBER_5 == 0) {
 			return BUZZ_STRING;
-		}else if (number % DIVISIBLE_BY_NUMBER_15 == 0) {
-			return FIZZBUZZ_STRING;
 		} else {
 			return String.valueOf(number);
 		}
