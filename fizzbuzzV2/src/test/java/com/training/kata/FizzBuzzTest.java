@@ -9,6 +9,8 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
 
+	private static final int INT_ONE = 1;
+
 	private static final int MAX_DIVISIBLE_BY_15 = 90;
 
 	private static final String STRING_FIZZBUZZ = "fizzbuzz";
@@ -71,7 +73,7 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void shouldReturnSameGivenNumberWhichIsNotDivisibleBy15Or5Or3(){
-		assertEquals("1", fizzbuzz.divisible(1));
+		assertEquals(Integer.toString(INT_ONE)  , fizzbuzz.divisible(INT_ONE));
 	}
 
 }
