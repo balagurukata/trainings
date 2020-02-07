@@ -9,7 +9,9 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
 
-	private static final String STRING_FIZZBUZZ2 = "fizzbuzz";
+	private static final int MAX_DIVISIBLE_BY_15 = 90;
+
+	private static final String STRING_FIZZBUZZ = "fizzbuzz";
 
 	private static final int MIN_DIVISIBLE_BY_15 = 15;
 
@@ -59,12 +61,12 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void shouldReturnFizzBuzzIfGivenNumberDivisibleBy15(){
-		assertEquals(STRING_FIZZBUZZ2, fizzbuzz.divisible(MIN_DIVISIBLE_BY_15));
+		assertEquals(STRING_FIZZBUZZ, fizzbuzz.divisible(MIN_DIVISIBLE_BY_15));
 	}
 	
 	@Test
 	public void shouldReturnFizzBuzzIf90NumberDivisibleBy15(){
-		assertEquals(STRING_FIZZBUZZ2, fizzbuzz.divisible(90));
+		assertEquals(STRING_FIZZBUZZ, fizzbuzz.divisible(MAX_DIVISIBLE_BY_15));
 	}
 
 }
