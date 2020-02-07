@@ -45,5 +45,10 @@ public class FizzBuzzTest {
 	public void shouldReturnBuzzIfGivenNumberDivisibleBy5(){
 		assertEquals(STRING_BUZZ, fizzbuzz.divisible(MIN_DIVISIBLE_BY_5));
 	}
+	
+	@Test
+	public void shouldReturnBuzzIf95NumberDivisibleBy5(){
+		assertEquals(STRING_BUZZ, fizzbuzz.divisible(95));
+	}
 
 }
