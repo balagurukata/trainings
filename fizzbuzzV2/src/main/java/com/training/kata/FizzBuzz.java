@@ -7,7 +7,11 @@ public class FizzBuzz {
 	private static final String STRING_FIZZ = "fizz";
 
 	public String divisible(int divisibleNumber) {
-		return (divisibleNumber % DIVISIBLE_NUMBER_3 == 0) ? STRING_FIZZ :STRING_BUZZ;
+		if(divisibleNumber % 15 == 0){
+			return "fizzbuzz";
+		}else{
+			return (divisibleNumber % DIVISIBLE_NUMBER_3 == 0) ? STRING_FIZZ :STRING_BUZZ;
+		}
 	}
 
 }

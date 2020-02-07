@@ -52,5 +52,10 @@ public class FizzBuzzTest {
 	public void shouldReturnBuzzIf95NumberDivisibleBy5(){
 		assertEquals(STRING_BUZZ, fizzbuzz.divisible(MAX_DIVISIBLE_BY_5));
 	}
+	
+	@Test
+	public void shouldReturnFizzBuzzIfGivenNumberDivisibleBy15(){
+		assertEquals("fizzbuzz", fizzbuzz.divisible(15));
+	}
 
 }
