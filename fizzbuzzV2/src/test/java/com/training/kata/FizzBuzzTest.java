@@ -9,6 +9,8 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
 
+	private static final int MAX_DIVISIBLE_BY_5 = 95;
+
 	private static final int MIN_DIVISIBLE_BY_5 = 5;
 
 	private static final int MAX_DIVISIBLE_BY_3 = 99;
@@ -48,7 +50,7 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void shouldReturnBuzzIf95NumberDivisibleBy5(){
-		assertEquals(STRING_BUZZ, fizzbuzz.divisible(95));
+		assertEquals(STRING_BUZZ, fizzbuzz.divisible(MAX_DIVISIBLE_BY_5));
 	}
 
 }
