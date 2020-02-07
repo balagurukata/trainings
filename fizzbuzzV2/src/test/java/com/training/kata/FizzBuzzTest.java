@@ -30,7 +30,12 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void shouldReturnFizzIf99NumberDivisibleBy3(){
-		assertEquals(STRING_FIZZ, fizzbuzz.divisible(3));
+		assertEquals(STRING_FIZZ, fizzbuzz.divisible(99));
+	}
+	
+	@Test
+	public void shouldReturnBuzzIfGivenNumberDivisibleBy5(){
+		assertEquals("buzz", fizzbuzz.divisible(5));
 	}
 
 }
