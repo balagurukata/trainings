@@ -68,5 +68,10 @@ public class FizzBuzzTest {
 	public void shouldReturnFizzBuzzIf90NumberDivisibleBy15(){
 		assertEquals(STRING_FIZZBUZZ, fizzbuzz.divisible(MAX_DIVISIBLE_BY_15));
 	}
+	
+	@Test
+	public void shouldReturnSameGivenNumberWhichIsNotDivisibleBy15Or5Or3(){
+		assertEquals("1", fizzbuzz.divisible(1));
+	}
 
 }

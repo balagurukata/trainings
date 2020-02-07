@@ -13,8 +13,13 @@ public class FizzBuzz {
 	private static final String STRING_FIZZ = "fizz";
 
 	public String divisible(int divisibleNumber) {
-		return Optional.of(divisibleNumber).map(divNum -> (divNum % DIVISIBLE_NUMBER_3 == 0 ? STRING_FIZZ : "")
+		String returnValue = Optional.of(divisibleNumber).map(divNum -> (divNum % DIVISIBLE_NUMBER_3 == 0 ? STRING_FIZZ : "")
 				+ (divNum % DIVISIBLE_NUMBER_5 == 0 ? STRING_BUZZ : "")).get();
+		if(returnValue.isEmpty()){
+			return Integer.toString(divisibleNumber);
+		}else{
+			return returnValue;
+		}
 	}
 
 }
